@@ -1,5 +1,6 @@
 import unittest
 from sourceCode.mathFunc import *
+from common  import genHtmlReport
 
 class TestMathFunc001(unittest.TestCase):
     """Test mathfunc.py"""
@@ -17,4 +18,12 @@ class TestMathFunc001(unittest.TestCase):
         self.assertEqual(2,divide(5,2))
 
 if __name__ == "__main__":
-    unittest.main()
+    s=unittest.TestSuite()
+    s.addTest(TestMathFunc001("test_add"))
+    s.addTest(TestMathFunc001("test_minus"))
+    s.addTest(TestMathFunc001("test_multi"))
+    s.addTest(TestMathFunc001("test_divide"))
+    genHtmlReport.generateHtmlReport(suit=s,title="TestMathFunc001接口测试报告",
+                                     description="接口测试结果详情",verbosity=2)
+
+

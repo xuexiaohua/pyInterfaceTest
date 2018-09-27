@@ -1,0 +1,6 @@
+module/exerciseTest/test_mathFunc_001
+module/exerciseTest/test_mathFunc_002
+module/exerciseTest/test_mathFunc_003
+#module/exerciseTest/test_mathFunc_001
+#module/exerciseTest/test_mathFunc_002
+#module/exerciseTest/test_mathFunc_003

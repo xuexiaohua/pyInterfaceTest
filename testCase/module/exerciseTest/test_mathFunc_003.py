@@ -1,6 +1,8 @@
 import unittest
-from sourceCode.mathFunc import *
+
 from common import genHtmlReport
+from src.module.exercise.mathFunc import *
+
 
 class TestMathFunc003(unittest.TestCase):
     """Test mathfunc.py"""
@@ -47,6 +49,9 @@ if __name__ == "__main__":
     suit1.addTest(TestMathFunc003("test_minus"))
     suit1.addTest(TestMathFunc003("test_multi"))
     suit1.addTest(TestMathFunc003("test_divide"))
-    genHtmlReport.generateHtmlReport(suit=suit1, title="TestMathFunc003接口测试报告",
-                                     description="接口执行结果详情", verbosity=2)
+    genHtmlReport.generateHtmlReport(suit=suit1,
+                                     title="TestMathFunc003接口测试报告",
+                                     description="接口执行结果详情",
+                                     verbosity=2,
+                                     casefile="testMathFunc003_")
 

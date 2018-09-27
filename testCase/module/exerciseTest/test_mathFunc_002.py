@@ -1,6 +1,8 @@
 import unittest
-from sourceCode.mathFunc import *
+
 from common import genHtmlReport
+from src.module.exercise.mathFunc import *
+
 
 class TestMathFunc002(unittest.TestCase):
     """Test mathfunc.py"""
@@ -20,6 +22,9 @@ class TestMathFunc002(unittest.TestCase):
 if __name__ == "__main__":
     # testCase执行无顺序
     suit=unittest.TestLoader().loadTestsFromTestCase(TestMathFunc002)
-    genHtmlReport.generateHtmlReport(suit=suit,title="TestMathFunc002接口测试报告",
-                                     description="接口执行结果详情",verbosity=2)
+    genHtmlReport.generateHtmlReport(suit=suit,
+                                     title="TestMathFunc002接口测试报告",
+                                     description="接口执行结果详情",
+                                     verbosity=2,
+                                     casefile="testMathFunc002_")
 

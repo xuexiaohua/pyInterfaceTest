@@ -1,0 +1,24 @@
+pyInterfaceTest
+|---common:存放一些共通的方法
+      |---getOsPath.py  存放路径相关的方法
+      |---getTime.py  存放时间相关的方法
+      |---genHtmlReport.py  生成接口测试报告方法
+      |---businessCommon.py
+      |---common.py
+      |---configDB.py
+      |---configEmail.py
+      |---configHttp.py
+|---report:存放测试结果报告
+      |---20180927 每天生成一个日期命名的文件目录，存放当天执行过的测试结果
+      |---...
+|---log：存放测试中生成的log日志
+      |---20180927 每天生成一个日期命名的日志目录，存放当天执行用例生成的日志结果
+      |---...
+|---testCase：用于存放具体的测试Case
+|---testFile：存放测试过程中用到的文件，
+|              包括上传的文件、测试用例以及数据库的sql语句
+|---caselist：txt文件，配置每次执行的case名称
+|---config:
+      |---config：配置一些常量(不变的)，例如数据库的相关信息，接口的相关信息等
+      |---readConfig：用于读取config配置文件中的内容
+|---runAll：用于执行case

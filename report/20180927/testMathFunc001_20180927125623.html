@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>TestMathFunc003接口测试报告</title>
+    <title>TestMathFunc001接口测试报告</title>
     <meta name="generator" content="HTMLTestRunner 0.8.2"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     
@@ -188,12 +188,12 @@ function showOutput(id, name) {
 --></script>
 
 <div class='heading'>
-<h1>TestMathFunc003接口测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2018-09-25 12:36:01</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:00.001116</p>
-<p class='attribute'><strong>Status:</strong> Pass 4</p>
+<h1>TestMathFunc001接口测试报告</h1>
+<p class='attribute'><strong>Start Time:</strong> 2018-09-27 12:56:23</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:00.001502</p>
+<p class='attribute'><strong>Status:</strong> Pass 3 Failure 1</p>
 
-<p class='description'>接口执行结果详情</p>
+<p class='description'>接口测试结果详情</p>
 </div>
 
 
@@ -221,103 +221,54 @@ function showOutput(id, name) {
     <td>View</td>
 </tr>
 
-<tr class='passClass'>
-    <td>TestMathFunc003: Test mathfunc.py</td>
+<tr class='failClass'>
+    <td>TestMathFunc001: Test mathfunc.py</td>
     <td>4</td>
-    <td>4</td>
-    <td>0</td>
+    <td>3</td>
+    <td>1</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1',4)">Detail</a></td>
 </tr>
 
 <tr id='pt1.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_add: Test method add(a,b)</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
-        pass</a>
-
-    <div id='div_pt1.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt1.1: 
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
+    <td colspan='5' align='center'>pass</td>
 </tr>
 
 <tr id='pt1.2' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_minus: Test Method minus(a,b)</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
-        pass</a>
-
-    <div id='div_pt1.2' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt1.2: 
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
+    <td colspan='5' align='center'>pass</td>
 </tr>
 
 <tr id='pt1.3' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_multi: Test Method multi(a,b)</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.3')" >
-        pass</a>
-
-    <div id='div_pt1.3' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.3').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt1.3: 
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
+    <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr id='pt1.4' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_divide: Test Method divide(a,b)</div></td>
+<tr id='ft1.4' class='none'>
+    <td class='failCase'><div class='testcase'>test_divide: Test Method divide(a,b)</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.4')" >
-        pass</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.4')" >
+        fail</a>
 
-    <div id='div_pt1.4' class="popup_window">
+    <div id='div_ft1.4' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.4').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.4').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt1.4: 
+ft1.4: Traceback (most recent call last):
+  File "E:/workspace/pyInterfaceTest924/testCase/module/exerciseTest/test_mathFunc_001.py", line 20, in test_divide
+    self.assertEqual(2,divide(5,2))
+AssertionError: 2 != 2.5
+Traceback (most recent call last):
+  File "E:/workspace/pyInterfaceTest924/testCase/module/exerciseTest/test_mathFunc_001.py", line 20, in test_divide
+    self.assertEqual(2,divide(5,2))
+AssertionError: 2 != 2.5
+
 
         </pre>
     </div>
@@ -329,8 +280,8 @@ pt1.4:
 <tr id='total_row'>
     <td>Total</td>
     <td>4</td>
-    <td>4</td>
-    <td>0</td>
+    <td>3</td>
+    <td>1</td>
     <td>0</td>
     <td>&nbsp;</td>
 </tr>
